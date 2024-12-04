@@ -1,0 +1,101 @@
+---
+
+---
+
+<form action="">
+  <div>
+    <label>
+      <span>Name</span>
+      <input type="text" name="name" placeholder="Ethan Johnson" required/>
+    </label>
+    <label>
+      <span>Company Email</span>
+      <input type="email" name="email" placeholder="ethan@johnson.com" required/>
+    </label>
+  </div>
+  <div>
+    <label>
+      <span>Company Size</span>
+      <select name="company-size" required>
+        <option value="50-100">50-100 employees</option>
+        <option value="100-500">100-500 employees</option>
+        <option value="500-1000">500-1000 employees</option>
+        <option value="1000+">1000+ employees</option>
+      </select>
+    </label>
+    <label>
+      <span>Subject</span>
+      <select name="subject" required>
+        <option value="building-landing-pages">Building Landing pages</option>
+        <option value="integrating-api">Integrating with API</option>
+        <option value="custom-solutions">Custom Solutions</option>
+        <option value="other">Other</option>
+      </select>
+    </label>
+  </div>
+  <label>
+    <span>Message</span>
+    <textarea name="message" placeholder="Enter your message" required></textarea>
+  </label>
+  <button>Contact Sales</button>
+</form>
+
+<style>
+  form {
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    width: 98%;
+    background-color: #ffffff33;
+    gap: 1.5rem;
+  }
+  button {
+    color: #4036a9;
+    background-color: white;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border: 1px solid #4036a9;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  span {
+    font-size: 0.875rem;
+  }
+  div {
+    display: flex;
+    gap: 16px;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+  }
+  input {
+    height: 2rem;
+  }
+  select {
+    height: 4rem;
+    cursor: pointer;
+  }
+  textarea {
+    height: 8rem;
+  }
+  @media (max-width: 850px) {
+    div {
+      flex-direction: column;
+    }
+  }
+</style>
